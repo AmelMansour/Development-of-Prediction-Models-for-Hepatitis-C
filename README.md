@@ -24,11 +24,56 @@ Pour mener à bien ce projet, voici quelques étapes que vous pourriez envisager
 * Import des bibliothèques nécessaires:
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/e3aa16cd-13e0-4ddb-9537-00f379cf0074)
 
-Phase 1: Compréhension du Métier (Business Understanding)
+* Phase 1: Compréhension du Métier (Business Understanding)
 L'objectif commercial est de fournir des outils d'aide à la décision pour évaluer le stade histologique de l'hépatite C chez les patients égyptiens. Cela permettrait une meilleure compréhension de la progression de la maladie et une prise en charge médicale plus précise.
 Phase 2: Compréhension des Données (Data Understanding)
 •Collecte des Données : Les données sont extraites de la base du virus de l'hépatite C pour des patients égyptiens « HCV-Egy-Data.csv »
 •Exploration des Données : Analyse des caractéristiques disponibles, identification des classes de la variable cible, et compréhension des relations entre les différentes variables.
 
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/f12a0940-1435-42b9-af2f-5fe97ca801f8)
+
+[1385 rows x 29 columns]
+J’ai un ensemble de données qui comprend 1385 lignes (ou observations) et 29 colonnes (ou variables). Cela signifie que chaque ligne dans votre ensemble de données représente une entrée ou une instance, et chaque colonne représente une caractéristique ou une variable différente associée à ces entrées.
+
+* Phase 3: Préparation des Données (Data Preparation)
+![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/3d9bfb09-a701-4858-a1cd-534d68dbc839)
+![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/08d06530-a839-4a6b-b2bc-ab0274eb357e)
+
+• Nettoyage des Données : Les valeurs 5 dans certaines colonnes sont remplacées par NaN, puis les valeurs aberrantes sont détectées et traitées.
+• Imputation : Les valeurs manquantes sont imputées en utilisant la médiane.
+• Standardisation / Normalisation : Les données sont standardisées pour s'assurer que toutes les caractéristiques ont la même échelle « StandardScaler / Scikit-learn »
+• Sélection des caractéristiques : Identifier et conserver les caractéristiques les plus importantes en éliminant celles qui sont redondantes ou moins informatives « SelectKBest »
+• Encodage des variables catégorielles : L'encodage des variables catégorielles consiste à convertir des variables qualitatives (catégorielles) en une forme numérique afin de pouvoir les utiliser comme entrées dans des modèles d'apprentissage automatique « LabelEncoder »
+• Équilibrage des classes : Technique d'échantillonnage (Si les classes ne sont pas équilibrées) « Smote »
+
+* Phase 4: Modélisation (Modeling)
+![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/b9bcd842-1681-492b-a84a-89147eed4c1b)
+![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/57c15c46-1241-4372-a336-907967eeefb0)
+
+• Création de Modèles : Sept modèles de classification sont utilisés:
+✓ RandomForest
+✓ SVM
+✓ Logistic Regression
+✓ Gradient Boosting
+✓ Decision Tree
+✓ K-Nearest Neighbors
+✓ Naive Bayes
+• Validation Croisée : La performance des modèles est évaluée en utilisant la validation croisée
+avec des métriques telles que
+✓ Accuracy
+✓ Precision
+✓ Rappel
+✓ F1-score
+✓ K-fold
+
+Phase 5: Évaluation (Evaluation)
+![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/6c73918d-b123-48b9-aaf1-57c57f6f64c7)
+
+•Évaluation des Modèles : Les résultats des modèles sont évalués pour chaque classe binaire.
+•Comparaison des Performances : Les performances des modèles sont comparées et analysées
+pour chaque classe binaire.
+
+* Phase6 :Déploiement (Deployment): Sauvegarde des modèles entraînés pour une utilisation future
+
+# Analyse et Interprétation : 
 
