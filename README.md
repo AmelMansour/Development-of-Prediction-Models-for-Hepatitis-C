@@ -1,6 +1,7 @@
 # Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria
 
-Ce projet est intéressant et potentiellement très bénéfique pour la santé publique, étant donné l'importance de la lutte contre le virus de l'hépatite C chez la population égyptienne . En effet , L’Égypte est le pays qui connaît l’épidémie d’hépatite C la plus importante au monde. S selon un communiqué publié sur le site Internet de l'OMS , il a diagnostiqué 87% des personnes vivant avec l'hépatite C qui est une infection du foie d’origine virale principalement transmise par le sang . 
+Ce projet est intéressant et potentiellement très bénéfique pour la santé publique, étant donné l'importance de la lutte contre le virus de l'hépatite C chez la population égyptienne . 
+En effet , L’Égypte est le pays qui connaît l’épidémie d’hépatite C la plus importante au monde. Selon un communiqué publié sur le site Internet de l'OMS , il a diagnostiqué 87% des personnes vivant avec l'hépatite C qui est une infection du foie d’origine virale principalement transmise par le sang . 
 
 Pour mener à bien ce projet, voici quelques étapes que vous pourriez envisager : 
 
