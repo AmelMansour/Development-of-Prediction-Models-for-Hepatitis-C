@@ -24,81 +24,71 @@ The primary goal of this project is to apply various machine learning techniques
 # Importer les bibliothèques nécessaires :
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/e3aa16cd-13e0-4ddb-9537-00f379cf0074)
 
-Phase 1: Business Understanding
+# Phase 1: Business Understanding
 The business objective is to provide decision support tools for evaluating the histological stage of hepatitis C in Egyptian patients. This would enable a better understanding of the disease's progression and allow for more precise medical management.
 
-Phase 2: Data Understanding
-Data Collection: The data is extracted from the hepatitis C virus database for Egyptian patients, specifically from the file "HCV-Egy-Data.csv".
-
-Data Exploration: An analysis of the available features is conducted, including the identification of the classes of the target variable and understanding the relationships between the different variables.
+# Phase 2: Data Understanding
+• Data Collection: The data is extracted from the hepatitis C virus database for Egyptian patients, specifically from the file "HCV-Egy-Data.csv".
+• Data Exploration: An analysis of the available features is conducted, including the identification of the classes of the target variable and understanding the relationships between the different variables.
 
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/f12a0940-1435-42b9-af2f-5fe97ca801f8)
 
 [1385 rows x 29 columns]
 I have a dataset that consists of 1385 rows (or observations) and 29 columns (or variables). This means that each row in your dataset represents an entry or instance, and each column represents a different feature or variable associated with these entries.
 
-# # Phase 3: Data Preparation
+# Phase 3: Data Preparation
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/3d9bfb09-a701-4858-a1cd-534d68dbc839)
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/08d06530-a839-4a6b-b2bc-ab0274eb357e)
 
 Data Cleaning and Preprocessing Steps:
 
-* Data Cleaning: The values of 5 in certain columns are replaced with NaN, followed by the detection and handling of outliers.
+• Data Cleaning: The values of 5 in certain columns are replaced with NaN, followed by the detection and handling of outliers.
 
-* Imputation: Missing values are imputed using the median.
+• Imputation: Missing values are imputed using the median.
 
-* Standardization / Normalization: The data is standardized to ensure that all features are on the same scale using StandardScaler from Scikit-learn.
+• Standardization / Normalization: The data is standardized to ensure that all features are on the same scale using StandardScaler from Scikit-learn.
 
-* Feature Selection: Identify and retain the most important features by eliminating redundant or less informative ones using SelectKBest.
+• Feature Selection: Identify and retain the most important features by eliminating redundant or less informative ones using SelectKBest.
 
-* Categorical Variable Encoding: Categorical variables are encoded into numerical forms to be used as inputs in machine learning models using LabelEncoder.
+• Categorical Variable Encoding: Categorical variables are encoded into numerical forms to be used as inputs in machine learning models using LabelEncoder.
 
-* Class Balancing: Sampling techniques (e.g., SMOTE) are applied if the classes are imbalanced.
+• Class Balancing: Sampling techniques (e.g., SMOTE) are applied if the classes are imbalanced.
 
-Phase 4: Modeling
+# Phase 4: Modeling
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/b9bcd842-1681-492b-a84a-89147eed4c1b)
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/57c15c46-1241-4372-a336-907967eeefb0)
 
 Model Creation: Seven classification models are used:
 
-* Random Forest
-
-* SVM (Support Vector Machine)
-
-* Logistic Regression
-
-* Gradient Boosting
-
-* Decision Tree
-
-* K-Nearest Neighbors (KNN)
-
-* Naive Bayes
+• Random Forest
+• SVM (Support Vector Machine)
+• Logistic Regression
+• Gradient Boosting
+• Decision Tree
+• K-Nearest Neighbors (KNN)
+• Naive Bayes
 
 Cross-Validation: The performance of the models is evaluated using cross-validation with metrics such as:
 
-* Accuracy
-
-* Precision
-
-* Recall
-
-* F1-score
-
-* K-fold cross-validation
+• Accuracy
+• Precision
+• Recall
+• F1-score
+• K-fold cross-validation
 
 # Phase 5: Evaluation
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/6c73918d-b123-48b9-aaf1-57c57f6f64c7)
 
-Model Evaluation: The results of the models are evaluated for each binary class.
+• Model Evaluation: The results of the models are evaluated for each binary class.
 
-Performance Comparison: The performance of the models is compared and analyzed for each binary class.
+• Performance Comparison: The performance of the models is compared and analyzed for each binary class.
 
 # Phase 6: Deployment:
-Model Saving: The trained models are saved for future use.
 
-Analysis and Interpretation:
-Binary Class 1.0
+• Model Saving: The trained models are saved for future use.
+
+# Analysis and Interpretation:
+• Binary Class 1.0
 ![image](https://github.com/AmelMansour/Develop-class-prediction-models-assess-performance-through-cross-validation-and-diverse-criteria/assets/141269604/2247839c-8f3b-4716-aa8a-e5b3bbff7fbd)
 
 • Binary Class 2.0
@@ -149,7 +139,7 @@ False Positives (FP): Often displayed in red or yellow, indicating the model inc
 
 False Negatives (FN): Often displayed in red or yellow, indicating the model incorrectly predicted the case as negative.
 
-Summary:
+# Summary:
 The Random Forest model shows consistent performance across all metrics and demonstrates a balanced ability to correctly predict both positive and negative classes.
 
 
