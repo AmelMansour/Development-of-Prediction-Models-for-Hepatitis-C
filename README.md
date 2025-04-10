@@ -61,19 +61,29 @@ Data Cleaning and Preprocessing Steps:
 Model Creation: Seven classification models are used:
 
 • Random Forest
+
 • SVM (Support Vector Machine)
+
 • Logistic Regression
+
 • Gradient Boosting
+
 • Decision Tree
+
 • K-Nearest Neighbors (KNN)
+
 • Naive Bayes
 
 Cross-Validation: The performance of the models is evaluated using cross-validation with metrics such as:
 
 • Accuracy
+
 • Precision
+
 • Recall
+
 • F1-score
+
 • K-fold cross-validation
 
 # Phase 5: Evaluation
